@@ -1,0 +1,174 @@
+@import url(../fonts/ProximaNova/stylesheet.css);
+body {
+  background: #000000;
+  font-family: "Proxima Nova Cn Rg";
+  font-weight: 400; }
+  @media screen and (max-width: 429px) {
+    body {
+      overflow: auto !important; } }
+  body nav {
+    position: absolute;
+    top: 0;
+    z-index: 90;
+    background: black; }
+    body nav .navbar-collapse .navbar-nav .nav-item {
+      margin-right: 2rem; }
+      body nav .navbar-collapse .navbar-nav .nav-item:hover a {
+        color: gray; }
+      body nav .navbar-collapse .navbar-nav .nav-item a {
+        color: white;
+        font-size: 1.4rem; }
+    body nav .navbar-collapse .navbar-nav .active a {
+      color: gray !important; }
+  body section.main .block-dots {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 30; }
+    @media screen and (max-width: 429px) {
+      body section.main .block-dots {
+        display: none; } }
+    body section.main .block-dots .dot {
+      cursor: pointer;
+      margin-bottom: 15px;
+      width: 15px;
+      height: 15px;
+      border: 1px solid white;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      -webkit-transition: background-color 0.3s ease-in-out;
+      -o-transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out; }
+    body section.main .block-dots .active {
+      background-color: white; }
+  body section.main .section .block-1 {
+    height: 100vh;
+    padding-right: 40px;
+    padding-left: 40px;
+    background: black;
+    position: relative;
+    z-index: 90; }
+    @media screen and (max-width: 429px) {
+      body section.main .section .block-1 {
+        margin-top: 170px; } }
+    body section.main .section .block-1 img.background {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      z-index: 1;
+      width: 65vw; }
+    body section.main .section .block-1 .center-block {
+      position: relative;
+      z-index: 20;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      body section.main .section .block-1 .center-block img.brand {
+        margin-right: 40px; }
+      @media screen and (max-width: 429px) {
+        body section.main .section .block-1 .center-block {
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          body section.main .section .block-1 .center-block img {
+            margin-right: 0 !important; } }
+      body section.main .section .block-1 .center-block .text-block h1 {
+        color: white;
+        font-family: "Proxima Nova Cn Rg";
+        font-weight: 600;
+        font-size: 3.5rem;
+        line-height: 1;
+        margin-bottom: 0; }
+      body section.main .section .block-1 .center-block .text-block span {
+        font-family: "Proxima Nova Cn Th";
+        color: white;
+        font-size: 3.7rem; }
+      @media screen and (max-width: 429px) {
+        body section.main .section .block-1 .center-block .text-block {
+          text-align: center;
+          margin-top: 30px; }
+          body section.main .section .block-1 .center-block .text-block h1 {
+            font-size: 2.5rem; }
+          body section.main .section .block-1 .center-block .text-block span {
+            font-size: 1.5rem; } }
+  body section.main .section .block-2 {
+    padding-left: 120px;
+    height: 100vh;
+    padding-top: 100px; }
+    @media screen and (max-width: 429px) {
+      body section.main .section .block-2 {
+        height: 0;
+        padding-left: 30px;
+        padding-top: 130px; } }
+    body section.main .section .block-2 .title-block h1 {
+      font-size: 4rem;
+      color: white;
+      font-family: "Proxima Nova Bl"; }
+      @media screen and (max-width: 429px) {
+        body section.main .section .block-2 .title-block h1 {
+          font-size: 2rem; } }
+    body section.main .section .block-2 .block-counts {
+      margin-bottom: 30px;
+      margin-top: 100px; }
+      @media screen and (max-width: 429px) {
+        body section.main .section .block-2 .block-counts {
+          margin-top: 40px; }
+          body section.main .section .block-2 .block-counts .block {
+            margin-bottom: 20px; } }
+      body section.main .section .block-2 .block-counts .block .big-number {
+        font-size: 10rem;
+        font-family: "Proxima Nova Bl";
+        color: #ff1a29;
+        line-height: 0.7;
+        position: relative;
+        z-index: 40; }
+        @media screen and (max-width: 429px) {
+          body section.main .section .block-2 .block-counts .block .big-number {
+            font-size: 4rem; } }
+      body section.main .section .block-2 .block-counts .block .block-desc {
+        margin-top: -30px;
+        padding: 15px;
+        background: black;
+        position: relative;
+        z-index: 41; }
+        body section.main .section .block-2 .block-counts .block .block-desc .desc {
+          font-size: 1.4rem;
+          color: gray; }
+        @media screen and (max-width: 429px) {
+          body section.main .section .block-2 .block-counts .block .block-desc {
+            margin-top: -15px; }
+            body section.main .section .block-2 .block-counts .block .block-desc .desc {
+              font-size: 1.2rem; } }
+    body section.main .section .block-2 .block-text {
+      margin-top: 150px; }
+      @media screen and (max-width: 429px) {
+        body section.main .section .block-2 .block-text {
+          margin-top: 0;
+          width: 100%; } }
+      body section.main .section .block-2 .block-text p {
+        color: white;
+        font-size: 1.5rem; }
+        @media screen and (max-width: 429px) {
+          body section.main .section .block-2 .block-text p {
+            font-size: 1rem; } }
+    body section.main .section .block-2 img {
+      position: absolute;
+      left: 0 !important;
+      z-index: -1; }
+      @media screen and (max-width: 429px) {
+        body section.main .section .block-2 img {
+          -o-object-fit: contain;
+             object-fit: contain;
+          width: 100vw; } }

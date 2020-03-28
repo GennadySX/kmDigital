@@ -1,0 +1,195 @@
+@import "../fonts/ProximaNova/stylesheet.css"
+
+$mobile-width: 430px
+$tablet-width: 768px
+$desktop-width: 1024px
+
+@mixin mobile
+  @media screen and (max-width: #{$mobile-width - 1px})
+    @content
+
+@mixin tablet
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px})
+    @content
+
+@mixin desktop
+  @media (min-width: #{$desktop-width})
+    @content
+
+
+
+
+body
+  background: #000000
+  font-family: "Proxima Nova Cn Rg"
+  font-weight: 400
+  @include mobile
+    overflow: auto !important
+  nav
+    position: absolute
+    top: 0
+    z-index: 90
+    background: black
+    .navbar-collapse
+      .navbar-nav
+        .nav-item
+          margin-right: 2rem
+
+          &:hover
+            a
+              color: gray
+
+          a
+            color: white
+            font-size: 1.4rem
+
+        .active
+          a
+            color: gray !important
+
+  section.main
+    .block-dots
+      position: absolute
+      right: 50px
+      top: 50%
+      transform: translate(-50%, -50%)
+      z-index: 30
+      @include mobile
+        display: none
+      .dot
+        cursor: pointer
+        margin-bottom: 15px
+        width: 15px
+        height: 15px
+        border: 1px solid white
+        border-radius: 50%
+        transition: background-color 0.3s ease-in-out
+
+      .active
+        background-color: white
+
+    .section
+      .block-1
+        height: 100vh
+        padding-right: 40px
+        padding-left: 40px
+        background: black
+        position: relative
+        z-index: 90
+        @include mobile
+          margin-top: 170px
+
+        img.background
+          position: absolute
+          left: 50%
+          top: 55%
+          transform: translate(-50%, -50%)
+          z-index: 1
+          width: 65vw
+
+        .center-block
+          position: relative
+          z-index: 20
+          display: flex
+          align-items: center
+          img.brand
+            margin-right: 40px
+          @include mobile
+            justify-content: center
+            img
+              margin-right: 0 !important
+
+
+          .text-block
+            h1
+              color: white
+              font-family: "Proxima Nova Cn Rg"
+              font-weight: 600
+              font-size: 3.5rem
+              line-height: 1
+              margin-bottom: 0
+
+            span
+              font-family: "Proxima Nova Cn Th"
+              color: white
+              font-size: 3.7rem
+            @include mobile
+              text-align: center
+              margin-top: 30px
+              h1
+                font-size: 2.5rem
+              span
+                font-size: 1.5rem
+
+
+      .block-2
+        padding-left: 120px
+        height: 100vh
+        padding-top: 100px
+        @include mobile
+          height: 0
+          padding-left: 30px
+          padding-top: 130px
+        .title-block
+          h1
+            font-size: 4rem
+            color: white
+            font-family: "Proxima Nova Bl"
+            @include mobile
+              font-size: 2rem
+
+        .block-counts
+          margin-bottom: 30px
+          margin-top: 100px
+          @include mobile
+            margin-top: 40px
+            .block
+              margin-bottom: 20px
+
+          .block
+            .big-number
+              font-size: 10rem
+              font-family: "Proxima Nova Bl"
+              color: #ff1a29
+              line-height: 0.7
+              position: relative
+              z-index: 40
+              @include mobile
+                font-size: 4rem
+            .block-desc
+              margin-top: -30px
+              //background: rgba(gray, 0.4)
+              padding: 15px
+              background: black
+              position: relative
+              z-index: 41
+              .desc
+                font-size: 1.4rem
+                color: gray
+              @include mobile
+                margin-top: -15px
+                .desc
+                  font-size: 1.2rem
+
+        .block-text
+          margin-top: 150px
+          @include mobile
+            margin-top: 0
+            width: 100%
+          p
+            color: white
+            font-size: 1.5rem
+            @include mobile
+              font-size: 1rem
+
+        img
+          position: absolute
+          left: 0 !important
+          z-index: -1
+          @include mobile
+            object-fit: contain
+            width: 100vw
+
+
+
+
