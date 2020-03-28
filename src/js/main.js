@@ -35,4 +35,9 @@ $(document).ready(function () {
     } else $('body').css('overflow', 'auto')
 
 
+    $('.dot').click(function () {
+        var section = $(this).data('id')
+        console.log('section', section)
+        $.fn.pagepiling.moveTo(section);
+    });
 });
